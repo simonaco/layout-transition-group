@@ -1,0 +1,45 @@
+body {
+  background: #1D3557;
+  color: white;
+}
+
+#app {
+  font-family: 'Lora', serif;
+  margin: 20px;
+  button {
+    margin-bottom: 10px;
+    background: #43AA8B;
+    border: 0;
+    cursor: pointer;
+    padding: 6px 8px;
+    font-size: 13px;
+  }
+}
+
+.items {
+  transition: all 0.4s ease;
+}
+
+#text {
+  transform-origin: 50% 50%;
+}
+
+svg {
+  fill: #A8DADC;
+}
+
+.active {
+  fill: #E63946;
+  .rect { 
+    transform: translate3d(0, 30px, 0); 
+  }
+  .circ {
+    transform: translate3d(30px, 0, 0) scale(0.5);
+  }
+  .text {
+    transform: rotate(90deg) scaleX(0.08) translate3d(-300px, -35px, 0);
+  }
+  .footer {
+    transform: translate3d(100px, 0, 0);
+  }
+}
